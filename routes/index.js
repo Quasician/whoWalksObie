@@ -3,7 +3,7 @@ var router = express.Router();
 
 /* GET home page. */
 router.get('/', function(req, res, next) {
-  const request = require('request');
+  /*const request = require('request');
   var options = {
     url: 'https://jeyvj7tvwe.execute-api.us-east-2.amazonaws.com/Gamma/getLastTime',
     headers: {
@@ -18,6 +18,8 @@ router.get('/', function(req, res, next) {
     console.log('body:', body); // Print the HTML for the Google homepage.
     res.render('index', { title: body.substring(1,body.length-1)});
   });
+  */
+ res.render('index', { page: 'Home', menuId:'home'});
 });
 
 // POST homepage

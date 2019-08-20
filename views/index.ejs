@@ -1,14 +1,16 @@
 <!DOCTYPE html>
 <html>
   <head>
-      <title>Static Website | <%= page %></title>
+      <title>Static Website | <%= time %></title>
       <meta charset="utf-8">
       <meta name="active-menu" content="<%= menuId %>">
       <meta name="viewport" content="width=device-width, initial-scale=1">
       <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
-      <link rel="stylesheet" href="./stylesheets/style.css">
+      <link rel="stylesheet" href="/public/stylesheets/style.css">
   </head>
   <body>
+
+      
       <nav class="navbar navbar-default">
           <div class="container">
             <div class="navbar-header">
@@ -17,13 +19,12 @@
                 <span class="icon-bar"></span>
                 <span class="icon-bar"></span>                        
               </button>
-              <a class="navbar-brand" href="#">LOGO</a>
+              <a class="navbar-brand" href="#">Who Walks Obie?</a>
             </div>
             <div class="collapse navbar-collapse" id="myNavbar">
               <ul class="nav navbar-nav navbar-right">
                 <li id="home"><a href="/">HOME</a></li>
-                <li id="about"><a href="/about">ABOUT US</a></li>
-                <li id="contact"><a href="/contact">CONTACT US</a></li>
+                <li id="about"><a href="/trends">TRENDS</a></li>
               </ul>
             </div>
           </div>
@@ -32,29 +33,27 @@
 
 
 
-      <div class="container-fluid bg-3 text-center">    
-          <h3><%= page %></h3><br>
+      <!-- <div class="container-fluid bg-3 text-center">    
+          <h3><%= time %></h3><br>
           <div class="row">
             <div class="col-sm-4">
               <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
               
             </div>
-            <div class="col-sm-4"> 
-              <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
-            </div>
+           
             <div class="col-sm-4"> 
               <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
             </div>
           </div>
-        </div>
-    
-
+        </div> -->
+  <div class="rectangle"></div>
+  <div id= "header">
+   <h1>Last walk was at <%= time %> by <%= name %> </h1>
+  </div> 
    <script type="text/javascript" src='/views/main.js'></script>
 
-    <h1>Who Walks Obie? </h1>
-    <p>Last Walk was  <%= page %></p>
   </body>
+  
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
   <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
-  <script src="./javascripts/menu.js"></script>
 </html>

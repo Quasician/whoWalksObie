@@ -19,7 +19,7 @@ router.get('/', function(req, res, next) {
     res.render('index', { title: body.substring(1,body.length-1)});
   });
   */
- res.render('index', { page: 'Home', menuId:'home'});
+ res.render('index', { time: '12:00PM', name:'Thomas', menuId: 'home'});
 });
 
 // POST homepage

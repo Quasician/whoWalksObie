@@ -1,8 +1,35 @@
 body {
   padding: 50px;
-  font: 14px "Lucida Grande", Helvetica, Arial, sans-serif; }
+  font: 15px "Lucida Grande", Helvetica, Arial, sans-serif; 
+  color: rgb(255, 255, 255);
+  background-image: url('/obieWalk.jpg');
+  background-attachment: fixed;
+  background-size: cover;
+  background-position: center;
 
-a {
-  color: #00B7FF; }
+
+}
+h1{
+  font: 70px "Lucida Grande", Helvetica, Arial, sans-serif; 
+  color: rgb(0, 0, 0);
+
+}
+
+#header{
+  position: absolute;
+  bottom: 60px;
+  text-align: center;
+  left: 0;
+  width: 100%;
+}
+
+.rectangle {
+  height: 85px;
+  width: 100%;
+  position: absolute;
+  bottom: 70px;
+  left: 0;
+  background-color: white;
+}
 
 /*# sourceMappingURL=style.css.map */

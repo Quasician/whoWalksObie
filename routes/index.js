@@ -50,7 +50,7 @@ router.post('/', function(req, res, next){
 });
 router.post('/trends', function(req, res, next){
   console.log(req.body);
-  res.render('trends', { title: req.body["TimeStamp"]});
+  res.render('trends', { time: req.body["TimeStamp"], name: req.body["Name"], menuId: 'home'});
   //res.status(200).end();
 });
 

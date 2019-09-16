@@ -32,4 +32,13 @@ h1{
   background-color: white;
 }
 
+.bigRectangle {
+  height: 300px;
+  width: 100%;
+  position: absolute;
+  bottom: 70px;
+  left: 0;
+  background-color: white;
+}
+
 /*# sourceMappingURL=style.css.map */
